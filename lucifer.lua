@@ -85,7 +85,7 @@ function prepararInformacoes(user_id, onlyPrint)
     local dinheiro_mao = vRP.getMoney(user_id)
 
     local id = user_id
-    local nome = identity.firstname .. " " .. identity.name
+    local nome = identity.name .. " " ..identity.firstname
     local registro = identity.registration
     local telefone = identity.phone
 
