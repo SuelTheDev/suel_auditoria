@@ -8,4 +8,4 @@ version '1.0.0'
 
 server_only 'yes'
 server_scripts {'@vrp/lib/utils.lua','lucifer.lua'}
-discord_webhook 'https://discord.com/api/webhooks/835655302493634590/9DF542yQfG24phgCC9Bzs4_VxQbzS-SGaSyCSW4vHboH_AxeoFVnuOWQrr_fA2d612Va'
+discord_webhook 'SEU WEBHOOK AQUI'
