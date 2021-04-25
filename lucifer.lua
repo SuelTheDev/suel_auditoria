@@ -85,13 +85,13 @@ function formatarCarros(embeds, user_id)
 
    for k, v in pairs( carros ) do
         idsCarros = ("%s, %s"):format(v.vehicle, idsCarros)
-        local bauObject = json.decode(vRP.getSData("chest:u" .. v.user_id .. "veh_" .. v.vehicle)) or {}
-        if #bauObject > 0 then
+        local bauObject = json.decode(vRP.getSData("chest:u" .. v.user_id .. "veh_" .. v.vehicle)) or {{}}
+        if #bauObject ~= 1 then
             local items = ""
             for y, x in pairs( bauObject ) do
                  items = ("%s: %d%s%s"):format(y, x.amount, PULA_LINHA, items)
             end
-            bausCarros = ("**%s**:%s%s%s%s"):format(v.vehicle, PULA_LINHA, items, PULA_LINHA, bausCarros) 
+            bausCarros = ("**%s**:%s%s%s%s%s"):format(v.vehicle, PULA_LINHA, items, PULA_LINHA, bausCarros, DOUBLE_LN) 
         else          
            bausCarros = ("**%s**: NENHUM ITEM NO PORTA-MALAS"):format(v.vehicle)           
         end
