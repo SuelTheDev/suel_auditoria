@@ -210,7 +210,7 @@ function formatarInformacoesPessoais(embeds, datatable, user_id)
     table.insert(embeds,  {
             title = ":information_source: Outras Informações :information_source:",
             color = tonumber("0xff1122"),
-            description = ("**Tá Online**: %s%s**Tá Banido**: %s%s**Vez Allowlist**: %s%s**Grupos**: %s%s**Última posição**: %s"):format(
+            description = ("**Tá Online**: %s%s**Tá Banido**: %s%s**Fez Allowlist**: %s%s**Grupos**: %s%s**Última posição**: %s"):format(
                 isOnline,PULA_LINHA,
                 banido,PULA_LINHA,
                 allowed,PULA_LINHA,
@@ -227,7 +227,7 @@ function formatarLicencas(embeds, user_id)
 
 
     local rows = suelLog.getUserIdentifies(user_id)
-    local d = "NENHUM LICENÇA ENCONTRADA"
+    local d = "NENHUMA LICENÇA ENCONTRADA"
     
     if #rows > 0 then
        d = ""
