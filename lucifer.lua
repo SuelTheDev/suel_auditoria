@@ -346,7 +346,7 @@ function prepararListaDePlayerNaFac( embed, facGroup )
         end
     end
 
-    local d = ""
+    local d = "Quantidade de membros: " .. #usuarios .. DOUBLE_LN
 
     if #usuarios > 0 then
         d = "**LISTA DE MEMBROS**" .. DOUBLE_LN
